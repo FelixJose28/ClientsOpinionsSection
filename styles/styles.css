@@ -12,6 +12,10 @@
     --clr-bg-light: hsl(0, 0%, 100%);
 
     --ff-letter: "Spartan", sans-serif;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
 }
 body{
     background-image: url(/images/bg-pattern-top-desktop.svg),
@@ -20,3 +24,83 @@ body{
     background-position: top left, right bottom;
     font-family: var(--ff-letter);
 }
+.father{
+    display: relative;
+}
+.container{
+    width: 85%;
+    height: 80%;
+    background-color:rgb(192, 17, 17);
+
+    position:absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+}
+.row{
+    display: flex;
+}
+.divLeft{
+    flex: 1;
+    background-color:hsl(333, 80%, 67%)
+}
+.divLeft>h1{
+    color: var(--clr-primary);
+    font-size: 40px;
+}
+.divRight{
+    flex: 1;
+    background-color:hsl(300, 43%, 22%)
+}
+.calification{
+    margin-top: 20px;
+}
+.calification>img,p{
+    display: inline;
+}
+.calificationfather:nth-child(2){
+    transform: translateX(2rem);
+}
+.calificationfather:nth-child(3){
+    transform: translateX(4rem);
+}
+.cardFather{
+    display: flex;
+}
+.card:nth-child(2){
+    margin-left: 2%;
+    margin-top: 3%;
+}
+.card:nth-child(3){
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+.card{
+    height: 100%;
+    width: 60%;
+    margin: 1.8%;
+    padding:  2% 2.5% 2% 2.5%;
+    border-radius: 5%;
+    background-color: var(--clr-primary);
+
+}
+.card:nth-child(2){
+    transform: translateX(2.rem);
+}
+.cardHeader{
+    display: flex;
+    background-color: aqua;
+}
+.card_info{
+    margin-top: 2%;
+    margin-left: 1.3rem;
+}
+.cardHeader>img{
+    border-radius: 50%;
+    width: 20%;
+}
+.card>blockquote{
+    margin-top: 1rem;
+}
+
+
