@@ -21,7 +21,7 @@
 
     --fw-400: 400;
     --fw-500: 500;
-    --fw-700: 700;
+
 }
 body{
     background-image: url(/images/bg-pattern-top-desktop.svg),
@@ -55,9 +55,10 @@ body{
     width: 65%;
 }
 .divLeft>p{
-    margin-top: 4px;
+    margin-top: 2%;
     color: var(--clr-txt-dark);
     display: inline-block;
+    font-weight: var(--fw-500);
     width: 75%;
 }
 .divRight{
@@ -66,6 +67,7 @@ body{
 .calification{
     text-align: center;
     margin-top: 20px;
+    font-weight: bold;
     padding: 10px;
     background-color: var(--clr-txt-middle);
     width: 75%;
@@ -132,4 +134,70 @@ body{
     line-height: 145%;
     margin-top: 1rem;
     color: var(--clr-txt-light);
+}
+@media screen and (max-width: 375px){
+    body{
+        background-image: url('/images//bg-pattern-top-mobile.svg'),
+        url('/images/bg-pattern-bottom-mobile.svg');
+    }
+    .divLeft>h1{
+        width: 100%;
+
+    }
+    .container{
+        width: 90%;
+    }
+    .row{
+        width: 100%;
+        padding-left: 0px;
+        display: block;
+        text-align: center;
+    }
+
+
+    .calification{
+        margin: auto;
+        text-align: center;
+        margin-top: 5%;
+
+    }
+
+
+
+    .calificationfather:nth-child(2){
+        transform: translateX(0rem);
+    }
+    .calificationfather:nth-child(3){
+        transform: translateX(0rem);
+    }
+    .calification>*{
+        display: block;
+    }
+    .calification>p{
+        margin-top: 5px;
+    }
+    .card{
+        display: block;
+        height: 200px;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 10%;
+        padding:  6% 2.3% 6% 2.3%;
+        border-radius: 5%;
+        background-color: var(--clr-primary);
+        
+    }
+    .cardFather{
+        height: 100vh;
+        margin-top: 3%;
+        display:block;
+        margin-bottom: 5%;
+    }
+    .card:nth-child(2){
+        margin-left: 0%;
+    }
+    .card:nth-child(3){
+        margin-left: 0%;
+    }
+
 }
