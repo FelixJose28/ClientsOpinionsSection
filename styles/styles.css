@@ -7,11 +7,16 @@
     --clr-primary: hsl(300, 43%, 22%);
     --clr-secondary: hsl(333, 80%, 67%);
 
-    --clr-bg-input: hsl(303, 10%, 53%);
-    --clr-bg-dark: hsl(300, 24%, 96%);
-    --clr-bg-light: hsl(0, 0%, 100%);
+
+    --clr-txt-dark: hsl(303, 10%, 53%);
+    --clr-txt-middle: hsl(300, 24%, 96%);
+    --clr-txt-light: hsl(0, 0%, 100%);
 
     --ff-letter: "Spartan", sans-serif;
+
+    --fs-200: 0.8125rem;
+    --fs-300: 0.9375rem;
+    --fs-500: 2rem;
 
     --fw-400: 400;
     --fw-500: 500;
@@ -23,6 +28,7 @@ body{
     background-repeat: no-repeat;
     background-position: top left, right bottom;
     font-family: var(--ff-letter);
+    font-size: 15px;
 }
 .father{
     display: relative;
@@ -30,32 +36,46 @@ body{
 .container{
     width: 85%;
     height: 80%;
-    background-color:rgb(192, 17, 17);
-
     position:absolute;
     top: 0; bottom: 0; left: 0; right: 0;
     margin: auto;
 }
 .row{
     display: flex;
+    padding-left: 20px;
 }
 .divLeft{
     flex: 1;
-    background-color:hsl(333, 80%, 67%)
 }
 .divLeft>h1{
     color: var(--clr-primary);
-    font-size: 40px;
+    font-size: var(--fs-500);
+    font-weight: var(--fw-700);
+    width: 65%;
+}
+.divLeft>p{
+    margin-top: 4px;
+    color: var(--clr-txt-dark);
+    display: inline-block;
+    width: 85%;
 }
 .divRight{
     flex: 1;
-    background-color:hsl(300, 43%, 22%)
 }
 .calification{
+    text-align: center;
     margin-top: 20px;
+    padding: 10px;
+    background-color: var(--clr-txt-middle);
+    width: 75%;
+    border-radius: 10px;
 }
 .calification>img,p{
     display: inline;
+}
+.calificationText{
+    margin-left: 4%;
+    color: var(--clr-primary);
 }
 .calificationfather:nth-child(2){
     transform: translateX(2rem);
@@ -64,6 +84,7 @@ body{
     transform: translateX(4rem);
 }
 .cardFather{
+    margin-top: 3%;
     display: flex;
 }
 .card:nth-child(2){
@@ -76,7 +97,7 @@ body{
 }
 
 .card{
-    height: 100%;
+    height: 225px;
     width: 60%;
     margin: 1.8%;
     padding:  2% 2.5% 2% 2.5%;
@@ -84,13 +105,20 @@ body{
     background-color: var(--clr-primary);
 
 }
-.card:nth-child(2){
-    transform: translateX(2.rem);
-}
+
 .cardHeader{
     display: flex;
-    background-color: aqua;
 }
+.cardName{
+    color: var(--clr-txt-light);
+}
+.cardStatus{
+    color: var(--clr-secondary);
+}
+.cardHeader>h3{
+    color: aliceblue;
+}
+
 .card_info{
     margin-top: 2%;
     margin-left: 1.3rem;
@@ -101,6 +129,5 @@ body{
 }
 .card>blockquote{
     margin-top: 1rem;
+    color: var(--clr-txt-light);
 }
-
-
